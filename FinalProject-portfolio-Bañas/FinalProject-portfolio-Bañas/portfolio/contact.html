@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Jhonpaul <span>Bañas</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="academics.html">Academics</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="academics.html">Academics</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact" data-aos="fade-up" data-aos-duration="1500">
+        <h1 data-aos="fade-up" data-aos-duration="1500">Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right" data-aos-duration="1500">
+                <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    Feel free to reach out if you have questions or just want to connect. I’m always open to discussing new ideas or potential collaborations.
+                </p>
+                <div class="info-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Phone: +09369029790</span>
+                </div>
+                <div class="info-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email: jhonpaulbanas1@gmail</span>
+                </div>
+                <div class="info-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="800">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Location: Manila, Philippines</span>
+                </div>
+            </div>
+    
+            <div class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <h2>Send a Message</h2>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+                    <button type="submit">Submit<i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+</section>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({offset:0,});
+</script>
+<script src="js/script.js"></script>
+</body>
+</html

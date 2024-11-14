@@ -1,0 +1,13 @@
+/* Achievement Image Styles */
+.achievement-image {
+    width: 150px; /* Set a larger desired width */
+    height: 150px; /* Set a fixed height to ensure all images are the same size */
+    object-fit: cover; /* Ensure the images cover the entire area without distortion */
+    border: 2px solid #888; /* Border style */
+    border-radius: 8px; /* Rounded corners (optional) */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.achievement-image:hover {
+    transform: scale(1.05); /* Slightly scale image on hover */
+}
